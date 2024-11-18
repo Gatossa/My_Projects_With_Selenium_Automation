@@ -1,3 +1,5 @@
+package TestsInProject;
+
 import ProjectPageObjects.*;
 
 import java.io.IOException;
@@ -5,7 +7,10 @@ import java.io.IOException;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
+@Listeners(ProjectListeners.Listeners.class)
 
 
     public class EndToEndTest extends Base {
