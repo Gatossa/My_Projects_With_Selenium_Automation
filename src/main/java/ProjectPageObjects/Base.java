@@ -47,10 +47,10 @@ public class Base {
             return url;
         }
 
-        public void SnapShot (String zdjecietestu) throws IOException {
+        public void SnapShot (String Testphoto) throws IOException {
             File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
-            File destFile = new File("/target/Screenshots" + timestamp() + ".png");
+            File destFile = new File("target/Screenshots/Screenshots" + timestamp() + ".png");
 
             FileUtils.copyFile(srcFile, destFile);
         }

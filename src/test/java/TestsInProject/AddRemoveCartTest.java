@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.time.Duration;
+
 @Listeners(ProjectListeners.Listeners.class)
 
 public class AddRemoveCartTest extends Base {
@@ -55,7 +56,6 @@ public class AddRemoveCartTest extends Base {
 
         System.out.println(cont.getTotalAmount().getText());
         Assert.assertEquals(cont.getTotalAmount().getText(), "$45.24");
-
 
 
 }
