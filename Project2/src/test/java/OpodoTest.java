@@ -51,13 +51,15 @@ public class OpodoTest extends Base {
         }
 
         @Test (priority = 2)
-    public void choosingDates(){
+    public void choosingDatesPeopleAccepting(){
         driver.findElement(By.xpath("//div[@class='odf-calendar-day' and text()='8']")).click();
         driver.findElement(By.xpath("//div[@class='odf-calendar-day' and text()='13']")).click();
         driver.findElement(By.cssSelector("[data-testid='pax-selector-summary']")).click();
         driver.findElement(By.cssSelector(" [class] [data-testid='pax-selector-item']:nth-of-type(1) .odf-icon-plus")).click();
         driver.findElement(By.cssSelector(" [class] [data-testid='pax-selector-item']:nth-of-type(2) .odf-icon-plus")).click();
         driver.findElement(By.cssSelector(".odf-input-group [type='button']")).click();
+        driver.findElement(By.cssSelector("[test-id='search-dp-btn']")).click();
+
 
 
 
