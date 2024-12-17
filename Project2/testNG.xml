@@ -3,7 +3,7 @@
 <suite name="Suite">
     <test thread-count="5" name="Test1">
         <classes>
-            <class name="Project1.AddRemoveItemsFromCart"></class>
+            <class name="java.O"></class>
         </classes>
     </test> <!-- Test -->
 
